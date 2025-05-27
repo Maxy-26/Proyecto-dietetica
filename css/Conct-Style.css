@@ -1,0 +1,68 @@
+form {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Sansita Swashed', cursive;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Etiquetas */
+form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+/* Inputs y textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 0.7rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto focus */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Botón enviar */
+form button {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover botón */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive: ajustar en pantallas chicas */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 1rem;
+  }
+}
